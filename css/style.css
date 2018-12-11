@@ -22,7 +22,7 @@ body {
   .container > * {
     color: orangered;
     font-size: 2rem;
-    padding: 2rem; }
+    padding: 3rem; }
 
 .Hotel_Preview {
   grid-column: center-start / center-end;
