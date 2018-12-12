@@ -16,51 +16,49 @@ body {
   line-height: 1.6; }
 
 .container {
+  direction: rtl;
   display: grid;
   grid-template-rows: min-content 85vh repeat(2, min-content) 60vw repeat(4, min-content);
-  grid-template-columns: [full-start gap-left-start] minmax(8rem, 1fr) [center-start gap-left-end] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end gap-right-start] minmax(8rem, 1fr) [full-end gap-right-end]; }
-  .container > * {
-    color: orangered;
-    font-size: 2rem;
-    padding: 3rem; }
+  grid-template-columns: 1fr repeat(8, minmax(min-content, 17rem)) 1fr; }
 
 .Hotel_Preview {
-  grid-column: center-start / center-end;
-  background-color: #352; }
+  background-color: #d6d870;
+  grid-column: 2 / 10; }
 
 .Navbar_Sticky {
-  grid-column: center-start / center-end;
-  background-color: beige; }
+  background-color: beige;
+  grid-column: 2 / 10; }
 
 .Search_Again {
-  grid-column: center-start / center-end;
-  background-color: #785; }
+  background-color: #785;
+  grid-column: 2 / 10; }
 
 .Hotel_Rooms {
-  grid-column: 3 / center-end;
-  background-color: #157; }
+  background-color: #157;
+  grid-column: 2 / 10; }
 
 .SideBar_Bill {
-  grid-column: 2 / 3;
-  grid-row: 5 / 6;
-  background-color: burlywood; }
+  background-color: burlywood;
+  grid-column: 2 / 10; }
 
 .Similar_Hotels {
-  grid-column: center-start / center-end; }
+  grid-column: 2 / 10; }
 
 .About_Hotel {
-  grid-column: center-start / center-end; }
+  grid-column: 2 / 10; }
 
 .Hotel_Rules {
-  grid-column: center-start / center-end; }
+  grid-column: 2 / 10; }
 
 .Hotel_Aminities {
-  grid-column: center-start / center-end; }
+  grid-column: 2 / 10; }
 
 .header {
   grid-column: 1 / -1;
-  background-color: aqua; }
+  background-color: #0089c4; }
+  .header__logo-box {
+    width: 13rem;
+    height: 4.8; }
 
 .footer {
-  grid-column: full-start / full-end;
   background-color: blue; }
