@@ -1,10 +1,31 @@
 .header {
-    grid-column: 1 / -1 ;
+    grid-column: col-start / span 12 ;
     background-color: #0089c4 ;
 
     &__logo-box {
+               
         width: 13rem ;
         height: 4.8;
-
+        
     }
+
+    .nav {
+        
+        
+        display: grid;
+        grid-auto-flow: column;
+        grid-column-gap: 2rem ;
+        
+        justify-content: start;
+
+        
+        list-style: none;
+        list-style-type: none;
+        border-bottom: 1px solid #005f88 ;
+        padding: 3.5rem 0 ;
+       
+        
+    }
+
+   
 }

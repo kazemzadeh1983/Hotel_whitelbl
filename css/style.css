@@ -19,46 +19,56 @@ body {
   direction: rtl;
   display: grid;
   grid-template-rows: min-content 85vh repeat(2, min-content) 60vw repeat(4, min-content);
-  grid-template-columns: 1fr repeat(8, minmax(min-content, 17rem)) 1fr; }
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: 2rem; }
 
 .Hotel_Preview {
   background-color: #d6d870;
-  grid-column: 2 / 10; }
+  grid-column: col-start 2 / span 10; }
 
 .Navbar_Sticky {
   background-color: beige;
-  grid-column: 2 / 10; }
+  grid-column: col-start 2 / span 10; }
 
 .Search_Again {
   background-color: #785;
-  grid-column: 2 / 10; }
+  grid-column: col-start 2 / span 10; }
 
 .Hotel_Rooms {
   background-color: #157;
-  grid-column: 2 / 10; }
+  grid-column: col-start 2 / span 10; }
 
 .SideBar_Bill {
   background-color: burlywood;
-  grid-column: 2 / 10; }
+  grid-column: col-start 2 / span 10; }
 
 .Similar_Hotels {
-  grid-column: 2 / 10; }
+  grid-column: col-start 2 / span 10; }
 
 .About_Hotel {
-  grid-column: 2 / 10; }
+  grid-column: col-start 2 / span 10; }
 
 .Hotel_Rules {
-  grid-column: 2 / 10; }
+  grid-column: col-start 2 / span 10; }
 
 .Hotel_Aminities {
-  grid-column: 2 / 10; }
+  grid-column: col-start 2 / span 10; }
 
 .header {
-  grid-column: 1 / -1;
+  grid-column: col-start / span 12;
   background-color: #0089c4; }
   .header__logo-box {
     width: 13rem;
     height: 4.8; }
+  .header .nav {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 2rem;
+    justify-content: start;
+    list-style: none;
+    list-style-type: none;
+    border-bottom: 1px solid #005f88;
+    padding: 3.5rem 0; }
 
 .footer {
   background-color: blue; }
