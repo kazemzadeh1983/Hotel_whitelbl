@@ -13,3 +13,8 @@ $color-grey-dark-2: #6D5D4B;
 // FONT VARIABLES
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
+
+@font-face {
+    font-family: 'IranSans' ;
+    src: url('assets/fonts/woff2/IRANSansWeb_Medium.woff2') format('woff2');
+}
