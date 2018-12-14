@@ -1,8 +1,22 @@
 .header {
     grid-column: col-start / span 12 ;
     background-color: #0089c4 ;
+    border-bottom: 1px solid #005f88 ;
+    padding: 3.5rem ;
+
+    display: grid ;
+    grid-template-columns:   repeat(12, [col-start] 1fr);
+    grid-gap: 2rem ;
+    
+    
+    
 
     &__logo-box {
+
+        grid-column: col-start 11 / col-start 12 ;
+        grid-row: 1 / 2 ;
+        
+        align-items: center ;
                
         width: 13rem ;
         height: 4.8;
@@ -10,19 +24,32 @@
     }
 
     .nav {
+        grid-column: col-start 2 / col-start 3 ;
+        display: flex ;
         
-        
-        display: grid;
-        grid-auto-flow: column;
-        grid-column-gap: 2rem ;
-        
-        justify-content: start;
-
+        align-items: center ;
         
         list-style: none;
         list-style-type: none;
-        border-bottom: 1px solid #005f88 ;
-        padding: 3.5rem 0 ;
+        
+
+        .nav__link {
+            display: block;
+            font-size: 1em;
+            padding: 1rem;
+            text-align: center;
+            color: white;
+            border: 1px solid transparent;
+            cursor: pointer;
+            text-decoration: none;
+            transition: border-color .13s ease-out;
+            
+            &:hover,
+            &:focus,
+            &:active {
+              border-color: currentColor;
+            }
+          }
        
         
     }
