@@ -56,13 +56,18 @@ a {
   height: 5rem; }
 
 .masthead {
-  background-color: #0089c4; }
+  background-color: #0089c4;
+  display: grid;
+  grid-template-columns: 15rem 1fr 28.5rem;
+  grid-template-rows: repeat(3, auto); }
 
-/* Channel navigation */
+/* Header navigation */
 .channel-nav {
   padding-bottom: 0.5rem;
   white-space: nowrap;
-  overflow-x: auto; }
+  overflow-x: auto;
+  grid-column: 2 / 4;
+  justify-items: center; }
 
 .channel-nav ul {
   display: flex;
@@ -76,7 +81,7 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   color: white;
-  padding: 1.5rem 3.2rem; }
+  padding: 1.5rem 1.8rem; }
 
 /*.nav-item li:before {
         content: '\f006';
@@ -95,25 +100,31 @@ a {
 .nav-item a:hover {
     color: var();
 }*/
-/* Channel content */
+/* Header content */
 .menu-nav {
   padding-bottom: 0.5rem;
   white-space: nowrap;
-  overflow-x: auto; }
+  overflow-x: auto;
+  grid-column: 2 / 4; }
 
 .menu-nav ul {
   display: flex;
   flex-direction: row-reverse;
   list-style-type: none; }
 
-.menu-item a {
+.menu__item {
+  display: flex; }
+
+.menu__item a {
   display: inline-block;
   font-size: 1.4rem;
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
-  padding: 1.5rem 3.2rem; }
+  padding-left: 3rem; }
+  .menu__item a::hover {
+    color: red !important; }
 
 @font-face {
   font-family: 'IranSans';

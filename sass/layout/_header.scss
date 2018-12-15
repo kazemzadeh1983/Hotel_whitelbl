@@ -5,16 +5,21 @@
 
 .masthead {
     background-color: #0089c4;
+    display: grid ;
+    grid-template-columns: 15rem 1fr 28.5rem ;
+    grid-template-rows: repeat(3,auto);
 
 }
 
-/* Channel navigation */
+/* Header navigation */
 
 .channel-nav {
     
     padding-bottom: 0.5rem;
     white-space: nowrap;
     overflow-x: auto;
+    grid-column: 2 / 4 ;
+    justify-items: center;
     
 }
 
@@ -31,7 +36,7 @@
     text-transform: uppercase;
     text-decoration: none;
     color: white;
-    padding: 1.5rem 3.2rem;
+    padding: 1.5rem 1.8rem;
 }
 /*.nav-item li:before {
         content: '\f006';
@@ -51,13 +56,14 @@
     color: var();
 }*/
 
-/* Channel content */
+/* Header content */
 
 .menu-nav {
     
     padding-bottom: 0.5rem;
     white-space: nowrap;
     overflow-x: auto;
+    grid-column: 2 / 4 ;
     
 }
 
@@ -65,14 +71,26 @@
     display: flex;
     flex-direction: row-reverse;
     list-style-type: none;
+    
+}
+.menu__item {
+    display: flex;
 }
 
-.menu-item a {
+.menu__item a {
     display: inline-block;
     font-size: 1.4rem;
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
     color: white;
-    padding: 1.5rem 3.2rem;
+    padding-left: 3rem ;
+
+    &::hover {
+        color: red !important; 
+    }
+
+    
 }
+
+
