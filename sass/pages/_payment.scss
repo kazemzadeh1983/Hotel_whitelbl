@@ -1,5 +1,9 @@
-body {
+
+.container {
     display: grid ;
-    grid-template-rows: 19rem repeat(4,auto) 32rem ;
+    grid-template-columns: [full-start] minmax(11.3rem, 1fr) [center-start] repeat(8,[col-start] minmax(min-content,14rem)[col-end]) [center-end] minmax(11.3rem, 1fr) [full-end];
+    grid-template-rows: 15vh repeat(5,min-content);
+    grid-row-gap: 4rem;
+    
     
 }
