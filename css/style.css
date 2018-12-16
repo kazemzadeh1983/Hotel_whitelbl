@@ -88,7 +88,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: [full-start] minmax(11.3rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(11.3rem, 1fr) [full-end];
-  grid-template-rows: 15vh repeat(5, min-content);
+  grid-template-rows: minmax(19rem, min-content) repeat(5, min-content);
   grid-row-gap: 4rem; }
 
 .search-btn {
@@ -98,3 +98,23 @@ body {
   background-color: #ffb35b;
   border: none;
   font-family: IRANSans; }
+
+.nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+  grid-gap: 2rem;
+  align-items: end; }
+  .nav__link:link, .nav__link:visited {
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: "IRANSans", Medium;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+    display: block;
+    transition: all .2s; }
+  .nav__link:hover, .nav__link:active {
+    background-color: rgba(255, 255, 255, 0.05);
+    transform: translateY(-3px); }

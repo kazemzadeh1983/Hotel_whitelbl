@@ -1,51 +1,28 @@
-.navigation {
-    
-   
-    
-    
+.nav {
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+    grid-gap: 2rem;
+    align-items: end;
+
+    &__link:link,
+    &__link:visited {
+        font-size: 1.4rem;
+        color: #fff;
+        text-decoration: none;
+        font-family: $font-display;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1.5rem;
+        display: block;
+        transition: all .2s;
+    }
+
+    &__link:hover,
+    &__link:active {
+        background-color: rgba(#fff, .05);
+        transform: translateY(-3px);
+    }
 }
-
-.navigation ul {
-    
-    
-}
-
-.nav-item a {
-    
-
-    
-}
-
-
-
-.menu-nav {
-    
-    
-    
-    
-       
-    
-}
-
-.menu-nav ul {
-    
-    
-}
-.menu__item {
-    
-}
-
-.menu__item a {
-    
-
-    
-}
-
-.menu__item embed {
-    width: 3.2rem;
-    height: 3.2rem;
-    
-    
-}
-
 
