@@ -1,6 +1,11 @@
 .header {
     background-color: #0089c4;
     grid-column: center-start / center-end ;
+
+    display: grid ;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,minmax(7rem,min-content));
+    grid-row-gap: 2rem ;
     
     
 
@@ -8,20 +13,37 @@
 
 .logo {
    
+    grid-column: 1 / span 1 ;
+    grid-row: 1 / 2 ;
+    background-color: beige;
+
     &__icon {
         width: 20rem ;
+       
+        
 
     }
 }
 
 
 /* Header navigation */
-
+.menus{
+    background-color: red;
+    grid-column: 2 / span 3 ;
+    grid-row: 2 / 3 ;
+}
 
 .sitesearch {
     
-    
-    
+    grid-column: 1 / span 4 ;
+    grid-row: row 3 ;
+    background-color: gray;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 1rem;
+    justify-items: center;
+    align-items: center;
 
     &__destination {
         width: 53rem;

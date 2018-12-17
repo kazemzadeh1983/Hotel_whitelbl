@@ -16,32 +16,52 @@ body {
 
 .header {
   background-color: #0089c4;
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, minmax(7rem, min-content));
+  grid-row-gap: 2rem; }
 
-.logo__icon {
-  width: 20rem; }
+.logo {
+  grid-column: 1 / span 1;
+  grid-row: 1 / 2;
+  background-color: beige; }
+  .logo__icon {
+    width: 20rem; }
 
 /* Header navigation */
-.sitesearch__destination {
-  width: 53rem;
-  height: 4rem;
-  border-radius: 5px;
-  border: none;
-  background-color: #f8f8f8; }
+.menus {
+  background-color: red;
+  grid-column: 2 / span 3;
+  grid-row: 2 / 3; }
 
-.sitesearch__entrydate {
-  width: 22.5rem;
-  height: 4rem;
-  border-radius: 5px;
-  border: none;
-  background-color: #f8f8f8; }
-
-.sitesearch__departuredate {
-  width: 22.5rem;
-  height: 4rem;
-  border-radius: 5px;
-  border: none;
-  background-color: #f8f8f8; }
+.sitesearch {
+  grid-column: 1 / span 4;
+  grid-row: row 3;
+  background-color: gray;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1rem;
+  justify-items: center;
+  align-items: center; }
+  .sitesearch__destination {
+    width: 53rem;
+    height: 4rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #f8f8f8; }
+  .sitesearch__entrydate {
+    width: 22.5rem;
+    height: 4rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #f8f8f8; }
+  .sitesearch__departuredate {
+    width: 22.5rem;
+    height: 4rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #f8f8f8; }
 
 @font-face {
   font-family: IRANSans;
@@ -101,10 +121,10 @@ body {
 
 .nav {
   list-style: none;
+  grid-column: 2 / span 3;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
-  grid-gap: 2rem;
-  align-items: end; }
+  grid-template-columns: repeat(auto-fit, minmax(10rem, max-content));
+  grid-gap: 2rem; }
   .nav__link:link, .nav__link:visited {
     font-size: 1.4rem;
     color: #fff;
@@ -112,9 +132,12 @@ body {
     font-family: "IRANSans", Medium;
     text-transform: uppercase;
     text-align: center;
-    padding: 1.5rem;
+    padding: 1rem;
     display: block;
     transition: all .2s; }
   .nav__link:hover, .nav__link:active {
     background-color: rgba(255, 255, 255, 0.05);
     transform: translateY(-3px); }
+
+.menus {
+  display: flex; }

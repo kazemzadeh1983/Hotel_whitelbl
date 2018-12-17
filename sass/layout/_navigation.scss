@@ -1,10 +1,12 @@
 .nav {
     list-style: none;
+    grid-column: 2 / span 3 ;
+    
 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10rem, max-content));
     grid-gap: 2rem;
-    align-items: end;
+    
 
     &__link:link,
     &__link:visited {
@@ -14,9 +16,10 @@
         font-family: $font-display;
         text-transform: uppercase;
         text-align: center;
-        padding: 1.5rem;
+        padding: 1rem;
         display: block;
         transition: all .2s;
+        
     }
 
     &__link:hover,
@@ -24,5 +27,9 @@
         background-color: rgba(#fff, .05);
         transform: translateY(-3px);
     }
+}
+
+.menus {
+    display: flex;
 }
 
