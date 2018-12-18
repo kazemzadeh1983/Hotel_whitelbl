@@ -2,15 +2,17 @@
     list-style: none;
     grid-column: 2 / span 3 ;
     
+    justify-content: end;
+    
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, max-content));
-    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, max-content));
+    grid-gap: 1rem;
     
 
     &__link:link,
     &__link:visited {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         color: #fff;
         text-decoration: none;
         font-family: $font-display;
