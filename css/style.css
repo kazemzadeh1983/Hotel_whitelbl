@@ -57,7 +57,7 @@ body {
   grid-column: 1 / span 4;
   grid-row: 3/ 4;
   display: grid;
-  grid-template-columns: 13rem 22.8rem 22.8rem 48.3rem;
+  grid-template-columns: 13rem minmax(12rem, 22.8rem) minmax(12rem, 22.8rem) minmax(20rem, 48.3rem);
   column-gap: 1rem;
   justify-content: center;
   align-content: center; }
@@ -132,6 +132,10 @@ body {
   grid-template-columns: [full-start] minmax(11.3rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(11.3rem, 1fr) [full-end];
   grid-template-rows: minmax(19rem, min-content) repeat(5, min-content);
   grid-row-gap: 4rem; }
+
+.hoteldetails {
+  background-color: #ce5656;
+  grid-column: center-start / center-end; }
 
 .search-btn {
   width: 13rem;
