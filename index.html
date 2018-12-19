@@ -1,20 +1,21 @@
 <!doctype <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+
     <title>Hotel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    
+
 </head>
 
 <body class="container">
 
-  
-  <header class="header">
+
+    <header class="header">
 
 
         <div class="logo">
@@ -22,81 +23,71 @@
                 <embed class="logo__icon" src="img/icon/eravel-logo-text-green.svg">
             </a>
 
-        </div>   
-         <!-- Header navigation-->
+        </div>
+        <!-- Header navigation-->
+
+        <ul class="nav">
+            <li class="nav__item"><a href="#" class="nav__link">تست</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">بلاگ</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">همکاران</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">پیگیری خرید</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">EN</a></li>
+
+        </ul>
+
+        <section class="menus">
+
             
-      <ul class="nav">
-        <li class="nav__item"><a href="#" class="nav__link">تست</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">بلاگ</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">همکاران</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">پیگیری خرید</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">EN</a></li>
-        
-      </ul>
-    
-      <section class="menus">
+<ul class="menu">
+    <li class="menu__item"><span class="menu__span"><a href="#" class="menu__link">پرواز</a><svg class="menu__icon">
+                <use xlink:href="img/icon/sb-bus.svg#sb-bus"></use>
 
-            <div class="menu">
-                    <a href="#" class="menu__link">اتوبوس</a>
-                    <svg class="menu__icon">
-                            <use xlink:href="img/icon/sb-bus.svg#sb-bus"></use>
-              
-                    </svg>
-            </div>
+            </svg></span></li>
+    <li class="menu__item"><span class="menu__span"><a href="#" class="menu__link">پرواز</a><svg class="menu__icon">
+                <use xlink:href="img/icon/sb-bus.svg#sb-bus"></use>
 
-            <div class="menu">
-                    <a href="#" class="menu__link">قطار</a>
-                    <svg class="menu__icon">
-                            <use xlink:href="img/icon/sb-train.svg#sb-train"></use>
-              
-                    </svg>
-                </div>
+            </svg></span></li>
+    <li class="menu__item"><span class="menu__span"><a href="#" class="menu__link">پرواز</a><svg class="menu__icon">
+                <use xlink:href="img/icon/sb-bus.svg#sb-bus"></use>
 
-                <div class="menu">
-                        <a href="#" class="menu__link">تور</a>
-                        <svg class="menu__icon">
-                                <use xlink:href="img/icon/sb-tour.svg#sb-tour"></use>
-                  
-                        </svg>
-                    </div>
+            </svg></span></li>
+    <li class="menu__item"><span class="menu__span"><a href="#" class="menu__link">پرواز</a><svg class="menu__icon">
+                <use xlink:href="img/icon/sb-bus.svg#sb-bus"></use>
 
-                    <div class="menu">
-                            <a href="#" class="menu__link">هتل</a>
-                            <svg class="menu__icon">
-                                    <use xlink:href="img/icon/sb-hotel.svg#sb-hotel"></use>
-                      
-                            </svg>
-                        </div>
+            </svg></span></li>
+    <li class="menu__item"><span class="menu__span"><a href="#" class="menu__link">پرواز</a><svg class="menu__icon">
+                <use xlink:href="img/icon/sb-bus.svg#sb-bus"></use>
 
-                        <div class="menu">
-                                <a href="#" class="menu__link">پرواز</a>
-                                <svg class="menu__icon">
-                                        <use xlink:href="img/icon/sb-plane.svg#sb-plane"></use>
-                          
-                                </svg>
-                            </div>
+            </svg></span></li>
 
-        
-      </section>
+
+</ul>
+
+
+        </section>
 
 
         <div class="sitesearch">
-          <button class="search-btn" aria-label="Search">جستجو</button>
-          <input type="date" placeholder="تاریخ ورود" class="sitesearch__entrydate" aria-label="entrydate">
-          <input type="date" placeholder="تاریخ خروج" class="sitesearch__departuredate" aria-label="departuredate">
-          <input type="search" placeholder="مقصد" class="sitesearch__destination" aria-label="destination">          
-        </div> 
+            <button class="search-btn" aria-label="Search">جستجو</button>
+            <input type="date" placeholder="تاریخ ورود" class="sitesearch__entrydate" aria-label="entrydate">
+            <input type="date" placeholder="تاریخ خروج" class="sitesearch__departuredate" aria-label="departuredate">
+            <input type="search" placeholder="مقصد" class="sitesearch__destination" aria-label="destination">
+        </div>
 
-        
+
     </header>
     <section class="hoteldetails">
-        <div class="datecheckin">
-            <div class="datecheckin__entry">
+
+
+        <!-- <time data-="20-08-1397">یکشنبه 13 خرداد 1397</time>
+                <h2 class="datecheckin__heading heading-2">تاریخ ورود</h2>
                 <time data-="20-08-1397">یکشنبه 13 خرداد 1397</time>
-                <h2 class="heading-2">تاریخ ورود</h2>
-            </div>
-        </div>
+                <h2 class="heading-2">تاریخ خروج</h2>-->
+
+        
     </section>
+
+
 
     <section class="informationpreview">
         Information Preview
@@ -111,4 +102,5 @@
     </section>
 
 </body>
+
 </html>

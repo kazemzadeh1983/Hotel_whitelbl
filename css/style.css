@@ -38,20 +38,17 @@ body {
 /* Header navigation */
 .menus {
   grid-column: 2 / span 3;
-  grid-row: 2 / 3;
-  justify-content: end; }
+  grid-row: 2 / 3; }
   .menus .menu {
-    display: grid;
-    grid-template-columns: 4rem 6rem;
-    justify-content: center;
-    align-content: center; }
+    list-style-type: none;
+    display: flex;
+    flex-direction: row; }
     .menus .menu__link {
-      text-decoration: none;
-      padding-top: .7rem;
-      font-size: 1.1rem;
-      color: #ffffff; }
+      text-decoration: none; }
     .menus .menu__icon {
-      fill: #ffffff; }
+      fill: #ffffff;
+      height: 32px;
+      width: 32px; }
 
 .sitesearch {
   grid-column: 1 / span 4;
@@ -134,7 +131,9 @@ body {
   grid-row-gap: 4rem; }
 
 .hoteldetails {
-  background-color: #ce5656;
+  color: black;
+  padding: 20rem;
+  background-color: greenyellow;
   grid-column: center-start / center-end; }
 
 .search-btn {

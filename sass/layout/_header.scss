@@ -41,31 +41,41 @@
 .menus{
     
     grid-column: 2 / span 3 ;
-    grid-row: 2 / 3 ;
-    justify-content: end;
+    grid-row: 2 / 3;
+    
+   
     
     
-
-    
-
 
     .menu {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
         
-        display: grid;
-        grid-template-columns: 4rem 6rem;
         
-        justify-content: center;
-        align-content: center;
+        
         &__link {
             text-decoration: none;
-            padding-top: .7rem;
-            font-size: 1.1rem;
-            color: #ffffff;
-
+            
+            
+            
+            
         }
 
         &__icon{
             fill:#ffffff;
+            
+            height: 32px;
+            width: 32px;
+            
+        }
+
+        &__span{
+            
+            
+        }
+
+        &__item{
             
         }
     }
