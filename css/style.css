@@ -19,12 +19,14 @@ body {
   grid-column: center-start / center-end;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 7rem 6rem 6rem; }
+  grid-template-rows: 5rem 6rem 6rem;
+  grid-row-gap: 1rem; }
 
 .logo {
   grid-column: 1 / span 1;
   grid-row: 1 / 2;
   padding: 1rem 2rem;
+  background-color: #434343;
   /*&::after {
             content: "";
             height: 1px;
@@ -38,17 +40,36 @@ body {
 /* Header navigation */
 .menus {
   grid-column: 2 / span 3;
-  grid-row: 2 / 3; }
+  grid-row: 2 / 3;
+  flex-direction: row;
+  justify-self: end; }
   .menus .menu {
     list-style-type: none;
     display: flex;
-    flex-direction: row; }
+    align-items: flex-end;
+    flex-flow: row-reverse; }
+    .menus .menu__item {
+      margin-right: 2rem;
+      display: inline-block;
+      vertical-align: middle; }
     .menus .menu__link {
-      text-decoration: none; }
+      text-decoration: none;
+      padding: 0 1rem;
+      font-family: "IRANSans", Medium;
+      color: #ffffff;
+      font-size: 1.2rem;
+      line-height: 1.9rem;
+      border: 1px solid;
+      border-radius: 5px; }
+      .menus .menu__link:hover, .menus .menu__link:active {
+        background-color: #ffffff;
+        color: #0089c4;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
     .menus .menu__icon {
       fill: #ffffff;
       height: 32px;
-      width: 32px; }
+      width: 32px;
+      transform: translateY(1.2rem); }
 
 .sitesearch {
   grid-column: 1 / span 4;
@@ -59,7 +80,7 @@ body {
   justify-content: center;
   align-content: center; }
   .sitesearch__destination {
-    border-radius: 5px;
+    border-radius: 2rem;
     border: none;
     background-color: #f8f8f8;
     background: white url("../../img/icon/location-icon.svg#location-icon") no-repeat scroll;
@@ -68,14 +89,14 @@ body {
     direction: rtl;
     padding: 0 2.5rem; }
   .sitesearch__entrydate {
-    border-radius: 5px;
+    border-radius: 2rem;
     border: none;
     background-color: #f8f8f8;
     background: white url("../../img/icon/calendar-icon.svg#calendar-icon") no-repeat scroll;
     background-size: 1.6rem 1.6rem;
     background-position: 95% 50%; }
   .sitesearch__departuredate {
-    border-radius: 5px;
+    border-radius: 2rem;
     border: none;
     background-color: #f8f8f8;
     background: white url("../../img/icon/calendar-icon.svg#calendar-icon") no-repeat scroll;
@@ -131,10 +152,9 @@ body {
   grid-row-gap: 4rem; }
 
 .hoteldetails {
-  color: black;
-  padding: 20rem;
   background-color: greenyellow;
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  display: grid; }
 
 .search-btn {
   width: 13rem;
@@ -147,6 +167,7 @@ body {
 .nav {
   list-style: none;
   grid-column: 2 / span 3;
+  background-color: #434343;
   justify-content: end;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(8rem, max-content));
