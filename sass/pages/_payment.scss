@@ -10,13 +10,104 @@
 
 .hoteldetails{
     
-    background-color: #ffffff;
-    grid-column: center-start / center-end ;
-    color: black;
+    
+    grid-column: center-start / col-start 7 ;
+    
     display: grid;
+    grid-template-columns: 1fr 1fr ;
+    width: 105%;
+    border-bottom: 1px solid #c7c7c7;
 
-
-   
 
     
+}
+
+.hoteldetaildate{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(max-content,8.3rem));
+    column-gap: 4.8rem;
+    align-items: center;
+    justify-items: end;
+
+    font-size: 2rem;
+    color: #434343;
+
+
+}
+
+.hoteldetailname{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-items: end;
+    align-items: center;
+
+    &__star{
+        fill: #ffe600;
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+    &__name{
+        font-family: "IRANSans";
+        color: #434343;
+        font-size: 3rem;
+        line-height: 2.4rem;
+    }
+    &__address{
+        grid-column: 1 / 3 ;
+        font-family: "IRANSans";
+        font-size: 1.8rem;
+        color: #434343;
+        line-height: 2.4rem;
+    }
+    
+    
+}
+.hotelameneties{
+    grid-column: 1 / 3 ;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-self: end;
+
+    .amenetie{
+        
+        margin-top: 3.3rem;
+        list-style-type: none;
+        display: flex;
+        
+        align-items: flex-end;
+        flex-flow: row-reverse;
+
+        
+        
+
+
+        &__item{
+
+            display: block;
+            padding: 0 1.5rem;
+            
+            
+           
+        }
+        
+        &__icon{
+            width: 4.8rem;
+            height: 4.8rem;
+            fill: #47cc7d;
+            
+        }
+    }
+}
+
+.informationpreview{
+    
+    grid-column: center-start / col-start 7 ;
+    
+    display: grid;
+    grid-template-columns: repeat(5,minmax(17rem,13rem)) ;
+    grid-template-rows: 6rem 7rem 7rem;
+    width: 105%;
+    border-bottom: 1px solid #c7c7c7;
+
 }
